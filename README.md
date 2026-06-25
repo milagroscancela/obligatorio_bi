@@ -7,6 +7,7 @@ Este proyecto implementa una solución completa de Business Intelligence sobre u
 
 ## 📁 Estructura del proyecto
 
+```
 obligatorio-bi/
 ├── analysis/          # Jupyter Notebook con consultas SQL y análisis
 ├── data/              # 12 CSVs de subgéneros SF de Kaggle
@@ -15,6 +16,7 @@ obligatorio-bi/
 ├── pentaho/           # Transformaciones .ktr y Job .kjb
 ├── venv_bi/           # Entorno virtual de Python
 └── README.md
+```
 
 ---
 
@@ -53,15 +55,15 @@ Abrir el archivo .pbix y actualizar la conexión a MySQL con la IP local y crede
 
 Esquema estrella con bridges para relaciones N:M.
 
-Fact_Metricas — métricas de cada libro rating, votos, reseñas
-Dim_Libro — información del libro
-Dim_Autor — autores
-Dim_Idioma — idiomas de edición
-Dim_Temporal — año y década de publicación
-Dim_Subgenero — 12 subgéneros SF
-Dim_Genero — 523 géneros literarios votados por usuarios
-Bridge_Subgenero — relación N:M libro-subgénero
-Bridge_Genero — relación N:M libro-género con votos de usuarios
+- **Fact_Metricas:** métricas de cada libro (rating, votos, reseñas)
+- **Dim_Libro:** información del libro
+- **Dim_Autor:** autores
+- **Dim_Idioma:** idiomas de edición
+- **Dim_Temporal:** año y década de publicación
+- **Dim_Subgenero:** 12 subgéneros SF
+- **Dim_Genero:** 523 géneros literarios votados por usuarios
+- **Bridge_Subgenero:** relación N:M libro-subgénero
+- **Bridge_Genero:** relación N:M libro-género con votos de usuarios
 
 ---
 
